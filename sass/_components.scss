@@ -1,12 +1,21 @@
 .btn {
   &:visited,
   &:link {
+    display: block;
     text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
     color: #fff;
     padding: 1rem 3rem;
     border-radius: 3px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+    &:active {
+      transform: translateY(0);
+    }
   }
 
   &-main {

@@ -13,12 +13,18 @@ body {
   font-family: "Roboto", sans-serif; }
 
 .btn:visited, .btn:link {
+  display: block;
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
   padding: 1rem 3rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: all 0.5s ease; }
+  .btn:visited:hover, .btn:link:hover {
+    transform: translateY(-1rem); }
+  .btn:visited:active, .btn:link:active {
+    transform: translateY(0); }
 
 .btn-main {
   background-color: #7868e6; }
