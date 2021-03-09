@@ -1,0 +1,42 @@
+.section-about {
+  background-color: $color-primary;
+
+  &::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 70%;
+    border-radius: 30px;
+    height: 12px;
+    background-color: $color-secondary;
+  }
+}
+
+.about-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about {
+  height: 30vh; // change later
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__img {
+    width: 25%;
+    img {
+      // test
+      height: 30rem;
+      width: 30rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    width: 75%;
+
+    h2.heading-2 {
+      margin-bottom: 3rem;
+    }
+  }
+}

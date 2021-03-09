@@ -12,6 +12,19 @@ html {
 body {
   font-family: "Roboto", sans-serif; }
 
+p.paragraph {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  line-height: 2.6rem; }
+
+h2.heading-2 {
+  font-size: 4rem;
+  letter-spacing: 0.6px; }
+
+h3.heading-tertiary {
+  font-size: 2.4rem;
+  letter-spacing: 0.4px; }
+
 .btn:visited, .btn:link {
   display: block;
   text-decoration: none;
@@ -42,7 +55,7 @@ header.header {
   justify-content: space-between; }
   .navbar__logo {
     font-family: "Bad Script", cursive;
-    font-size: 4rem;
+    font-size: 3.6rem;
     cursor: pointer; }
   .navbar__list {
     list-style: none;
@@ -65,7 +78,7 @@ header.header {
 
 .section-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero2.jpg);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 94vh;
@@ -76,7 +89,7 @@ header.header {
   margin: 0 auto; }
   .hero__text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -88,7 +101,96 @@ header.header {
     text-align: center;
     width: 70%;
     font-size: 5.2rem;
-    padding: 5rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+    padding: 5rem; }
   .hero .btn-main {
     margin-top: 3rem; }
+
+.section-about {
+  background-color: #e4fbff; }
+  .section-about::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 70%;
+    border-radius: 30px;
+    height: 12px;
+    background-color: #b8b5ff; }
+
+.about-wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.about {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .about__img {
+    width: 25%; }
+    .about__img img {
+      height: 30rem;
+      width: 30rem;
+      border-radius: 50%; }
+  .about__text {
+    width: 75%; }
+    .about__text h2.heading-2 {
+      margin-bottom: 3rem; }
+
+.section-lessons {
+  background-color: #e4fbff; }
+
+.lessons-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 7rem 0; }
+  .lessons-wrapper h2.heading-2 {
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.lessons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  align-content: center;
+  justify-items: center;
+  gap: 5rem; }
+  .lessons__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .lessons__box--img {
+      width: 10rem;
+      height: 10rem;
+      margin-bottom: 3rem; }
+    .lessons__box h3.heading-tertiary {
+      margin-bottom: 3rem; }
+
+footer.footer__container {
+  background-color: #2e2b2b; }
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer__logo {
+    font-family: "Bad Script", cursive;
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: #fff; }
+  .footer__contact {
+    display: flex;
+    flex-direction: column; }
+  .footer__span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    color: #fff; }
+    .footer__span:not(:last-of-type) {
+      margin-bottom: 1rem; }
+    .footer__span i {
+      margin-right: 1rem; }
