@@ -1,0 +1,38 @@
+.section-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+  position: relative;
+}
+
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  h1.heading-1 {
+    text-align: center;
+    width: 70%;
+
+    font-size: 5.2rem;
+    padding: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .btn-main {
+    margin-top: 3rem;
+  }
+}

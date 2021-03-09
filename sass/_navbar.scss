@@ -1,0 +1,51 @@
+header.header {
+  background-color: $color-primary;
+}
+
+.navbar {
+  height: 6vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    font-family: "Bad Script", cursive;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    border-radius: 3px;
+    padding: 1rem 3rem;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:active {
+      background-color: $color-secondary;
+    }
+
+    &:hover .navbar__link {
+      color: $color-gray;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -7,3 +8,81 @@
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.btn:visited, .btn:link {
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 3px; }
+
+.btn-main {
+  background-color: #7868e6; }
+
+header.header {
+  background-color: #e4fbff; }
+
+.navbar {
+  height: 6vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navbar__logo {
+    font-family: "Bad Script", cursive;
+    font-size: 4rem;
+    cursor: pointer; }
+  .navbar__list {
+    list-style: none;
+    display: flex; }
+  .navbar__item {
+    border-radius: 3px;
+    padding: 1rem 3rem;
+    transition: all 0.5s ease; }
+    .navbar__item:hover, .navbar__item:active {
+      background-color: #b8b5ff; }
+    .navbar__item:hover .navbar__link {
+      color: #edeef7;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7); }
+  .navbar__link, .navbar__link:link, .navbar__link:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    transition: all 0.5s ease;
+    text-transform: uppercase; }
+
+.section-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+  position: relative; }
+
+.hero {
+  max-width: 1440px;
+  margin: 0 auto; }
+  .hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; }
+  .hero h1.heading-1 {
+    text-align: center;
+    width: 70%;
+    font-size: 5.2rem;
+    padding: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  .hero .btn-main {
+    margin-top: 3rem; }
